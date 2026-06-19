@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotom Bake</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="start">
+<nav class="navbar">
+    
+    <div class="logo">
+        <a href="#start" aria-label="Zurück zum Start">
+            <img src="pokeball.png" alt="Zurück zum Start">
+        </a>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#material-section">Material</a></li>
+        <li><a href="#features">Eigenschaften</a></li>
+        <li><a href="#recipe-slider">Rezepte</a></li> 
+        <li><a href="#shipping">Versand</a></li>
+        <li><a href="#ruecksendung">Rücksendungen</a></li>
+      
+    </ul>
+
+    <button class="menu-toggle" type="button" aria-label="Navigation öffnen" aria-expanded="false">
+        <img src="hamburger-menu-icon.png" alt="">
+    </button>
+
+</nav>
+
+    <header class="hero">
+        <div class="hero-media">
+            <span class="badge">NEU!</span>
+                <video class="hero-video" autoplay muted loop playsinline poster="beschreibung.png">
+                    <source src="Herovideo.mp4" type="video/mp4">
+                </video>
+        </div>
+        <div class="hero-content">
+            <h1>Rotom Bake</h1>
+            <h2>Dein Partner in der Küche!</h2>
+            <p>
+                Verwandle deine Küche in eine echte Pokémon-Arena!<br>
+                Der Rotom-Ofen kombiniert präzise Heiztechnologie
+                mit dem frechen Design deines Lieblings-Geist-Pokémons.
+            </p>
+        </div>
+    </header>
+
+    <section class="description-section">
+        <div class="description-container" id="description-container" data-part="case">
+            <div class="description-tabs" role="tablist" aria-label="Ofenbereiche">
+                <button class="description-tab active" type="button" role="tab" aria-selected="true" data-part="case">Außengehäuse</button>
+                <button class="description-tab" type="button" role="tab" aria-selected="false" data-part="window">Sichtfenster</button>
+                <button class="description-tab" type="button" role="tab" aria-selected="false" data-part="handles">Griffe</button>
+                <button class="description-tab" type="button" role="tab" aria-selected="false" data-part="seal">Dichtung</button>
+            </div>
+
+            <div class="description-view">
+                <div class="description-image-frame">
+                    <img src="Ofenbild.png" alt="Rotom Bake mit markiertem Produktbereich" class="description-image">
+                </div>
+
+                <div class="description-info" aria-live="polite">
+                    <p class="description-kicker">Außengehäuse</p>
+                    <h2>Cool-Touch-Gehäuse aus rPBT</h2>
+                    <p>Das Außengehäuse besteht aus recyceltem Polybutylenterephthalat und bleibt im Alltag angenehm robust.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="material-section" id="material-section">
+        <h2>Material</h2>
+        <div class="material-list">
+            <div class="material-item">
+                <img src="rPBT.png" alt="rPBT Material" class="material-image">
+                <p>Cool-Touch-Gehäuse aus recyceltem Polybutylenterephthalat (rPBT)</p>
+            </div>
+            <div class="material-item">
+                <img src="Edelstahl.png" alt="Edelstahl Material" class="material-image">
+                <p>Edelstahl-Innenraum für langlebige Haltbarkeit und einfache Reinigung</p>
+            </div>
+            <div class="material-item">
+                <img src="Silikon.png" alt="Silikon Material" class="material-image">
+                <p>Silikon-Finish für eine robuste, leicht zu reinigende Oberfläche</p>
+            </div>
+            <div class="material-item">
+                <img src="Broskolitglas.png" alt="Borosilikatglas Material" class="material-image">
+                <p>Borosilikat-Durchblick für klare Sicht auf dein Essen</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="feature-section" id="features">
+
+    <div class="feature-row">
+        <div class="feature-image">
+            <img src="pizza.png" alt="25 Liter Kompaktpower">
+        </div>
+
+        <div class="feature-text">
+            <h2>25 Liter Kompaktpower</h2>
+            <p>
+                Kein Platz für einen fetten Einbauofen? Kein Problem!
+                Mit 25 Litern Inhalt hat Rotom die perfekte Single-
+                und WG-Größe. Er bietet genug Platz für Pizza,
+                Aufläufe oder frische Poké-Puffs.
+            </p>
+        </div>
+    </div>
+
+    <div class="feature-row reverse">
+        <div class="feature-image">
+            <img src="hitze.png" alt="Plasma Power">
+        </div>
+
+        <div class="feature-text">
+            <h2>Plasma-Power</h2>
+            <p>
+                Dank modernster 1800W Heiztechnologie erreicht Rotom deine Zieltemperatur in Rekordzeit.
+                Egal ob knusprige Pizza oder feine Poké-Puffs – die Hitzeverteilung ist so präzise wie eine Elektro-Attacke!
+            </p>
+        </div>
+    </div>
+
+    <div class="feature-row">
+        <div class="feature-image">
+            <img src="touch.png" alt="Cool Touch">
+        </div>
+
+        <div class="feature-text">
+            <h2>Cool-Touch Sicherheit</h2>
+            <p>
+                Die isolierte Spezialbeschichtung sorgt dafür,
+                dass die Außenseite angenehm kühl bleibt.
+                Keine Brandflecken auf deinen Möbeln.
+            </p>
+        </div>
+    </div>
+
+</section>
+
+    </section>
+
+    
+
+    <section class="accessories">
+        <div class="accessories-row">
+            <img src="Blech.png" alt="Backblech" class="accessory-left">
+            <div class="accessories-text">
+                <h2>Zubehör</h2>
+                <ul>
+                    <li>1× Emailliertes Backblech</li>
+                    <li>1× Verchromter Rost</li>
+                </ul>
+            </div>
+            <img src="blechimOfen.png" alt="Blech im Ofen" class="accessory-right">
+        </div>
+    </section>
+
+    <br><br>
+    <button>Vorbestellen</button>
+    <br> <br>
+
+    <section class="recipes" id="recipe-slider">
+    <h2>Rezepte</h2>
+
+    <div class="recipe-slider">
+
+        <div class="recipe-card">
+            <img src="pokepuffs.png" alt="Pizza">
+            <h3>Poke Puffs</h3>
+        </div>
+
+        <div class="recipe-card">
+            <img src="auflauf.png" alt="Auflauf">
+            <h3>Auflauf</h3>
+        </div>
+
+        <div class="recipe-card">
+            <img src="flammkuchen.png" alt="Cookies">
+            <h3>Flammkuchen</h3>
+        </div>
+
+    </div>
+</section>
+
+
+   <section class="intro">
+        <p>
+            Außen kompakt für deine WG, innen bereit für die ganz großen
+            kulinarischen Gaming-Sessions.<br> Hol dir den Rotom Bake,
+            deinen neuen Partner in der Küche!
+        </p>
+    </section>
+
+    <img src="studenten.png" class="student-image animate-image">
+
+    
+
+    <div class="shipping-section-grid">
+        <section class="shipping" id="shipping">
+            <h2>Versand</h2>
+            <p>
+                Standardversand: 8–12 Tage<br>
+                Expressversand: 6–10 Tage
+            </p>
+        </section>
+
+        <section class="shipping" id="ruecksendung">
+            <h2>Rücksendungen</h2>
+            <p>
+                Rückgabe innerhalb von 30 Tagen nach Lieferung.
+            </p>
+        </section>
+    </div>
+
+    
+
+    <div class="leiste">
+            <img src="pokeball.png">
+            <p>Pokémon</p>
+         </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="#">Kundenservice</a>
+            <a href="#">Versand</a>
+            <a href="#">Rücksendungen</a>
+            <a href="#">FAQ</a>
+            <a href="#">Über uns</a>
+            <a href="#">日本版サイト</a>
+            <a href="#">Datenschutz</a>
+        </div>
+
+        <p>
+            ©2026 Pokémon. ©1995 - 2026 Nintendo/Creatures Inc./GAME FREAK inc. TM, ®Nintendo.
+        </p>
+    </footer>
+
+</body>
+</html>
