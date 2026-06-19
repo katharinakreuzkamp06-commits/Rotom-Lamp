@@ -1,1 +1,2 @@
 # Rotom-Bake
+# Rotom-Lamp

@@ -66,32 +66,32 @@ const descriptionText = document.querySelector('.description-info p:last-child')
 
 const descriptionContent = {
     case: {
-        image: 'Ofenbild.png',
-        imageAlt: 'Rotom Bake mit markiertem Außengehäuse',
-        kicker: 'Außengehäuse',
-        headline: 'Cool-Touch-Gehäuse aus rPBT',
-        text: 'Das Außengehäuse besteht aus recyceltem Polybutylenterephthalat und bleibt im Alltag angenehm robust.'
+        image: 'Schweben.png',
+        imageAlt: 'Rotom-Lampe im Schwebe-Modus',
+        kicker: 'Schweben',
+        headline: 'Levitationssystem für perfekte Schwebefreiheit',
+        text: 'Die Lampe nutzt präzise elektromagnetische Kräfte, damit der Körper stabil und nahezu berührungslos über der Basis schwebt.'
     },
     window: {
-        image: 'Ofenbild.png',
-        imageAlt: 'Rotom Bake mit markiertem Sichtfenster',
-        kicker: 'Sichtfenster',
-        headline: 'Doppelseitiges Borosilikatglas',
-        text: 'Das hitzebeständige Sichtfenster gibt dir klare Sicht auf Pizza, Auflauf und Poké-Puffs.'
+        image: 'Dimmen.png',
+        imageAlt: 'Rotom-Lampe im Dimmen-Modus',
+        kicker: 'Dimmen',
+        headline: 'Sanfte Helligkeitsregelung für jede Stimmung',
+        text: 'Mit der Dimmer-Funktion passt du die Lichtintensität stufenlos an, damit die Atmosphäre jederzeit perfekt bleibt.'
     },
     handles: {
-        image: 'Ofenbild.png',
-        imageAlt: 'Rotom Bake mit markierten Griffen',
-        kicker: 'Griffe',
-        headline: 'Hitzebeständige Bakelit/ABS-Griffe',
-        text: 'Die Griffe sind für hohe Temperaturen ausgelegt und lassen sich beim Öffnen sicher anfassen.'
+        image: 'InduktivesLeuchten.png',
+        imageAlt: 'Rotom-Lampe mit induktivem Leuchten',
+        kicker: 'Induktives Leuchten',
+        headline: 'Induktive Lichtsteuerung ohne sichtbare Kabel',
+        text: 'Das Licht wird elegant und kabellos über das Design des Produkts gesteuert, ohne den minimalistischen Look zu beeinträchtigen.'
     },
     seal: {
-        image: 'blechimOfen.png',
-        imageAlt: 'Backblech im Ofen mit roter Dichtung',
-        kicker: 'Dichtung',
-        headline: 'Rote Silikon-Dichtung',
-        text: 'Die rote Silikon-Dichtung hält die Hitze im Innenraum und greift Rotoms Plasma-Look wieder auf.'
+        image: 'PremiumMaterialien.png',
+        imageAlt: 'Rotom-Lampe mit Premium-Materialien',
+        kicker: 'Premium Materialien',
+        headline: 'Hochwertige Materialien für langlebige Schönheit',
+        text: 'Die Kombination aus edlen Oberflächen und robusten Komponenten sorgt für ein luxuriöses, langlebiges Produktgefühl.'
     }
 };
 

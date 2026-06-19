@@ -6,8 +6,8 @@
 
 body {
     font-family: 'Lato';
-    background: #ffffff;
-    color: #333;
+    background: #000000;
+    color: #ffffff;
 }
 
 .navbar {
@@ -18,7 +18,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #d0555a;
+    background: #1A59C7;
     min-height: 60px;
 }
 
@@ -91,8 +91,7 @@ body {
     top: 16px;
     left: 16px;
     z-index: 2;
-    background:#D0555A;
-    color: rgb(255, 255, 255);
+    background:#1A59C7;
     padding: 8px 15px;
     font-weight: bold;
     border-radius: 10px;
@@ -154,9 +153,9 @@ img {
     gap: 10px;
     margin-bottom: 18px;
     padding: 8px;
-    background: #f6f6f6;
+    background: #000000;
     border-radius: 18px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+    box-shadow: 0 8px 24px rgba(98, 98, 98, 0.07);
 }
 
 .description-tab {
@@ -166,7 +165,7 @@ img {
     border: 0;
     border-radius: 12px;
     background: transparent;
-    color: #333;
+    color: #e7e7e7;
     font-weight: 700;
     cursor: pointer;
     box-shadow: none;
@@ -180,8 +179,8 @@ img {
 }
 
 .description-tab.active {
-    background: #d0555a;
-    color: #fff;
+    background: #1A59C7;
+    color: #ffffff;
 }
 
 .description-view {
@@ -193,10 +192,10 @@ img {
 .description-image-frame {
     flex: 1.35;
     aspect-ratio: 16 / 10;
-    overflow: hidden;
+    overflow: visible;
     border-radius: 20px;
-    background: #f4f4f4;
     box-shadow: 0 12px 34px rgba(0, 0, 0, 0.12);
+    background: #000000;
 }
 
 .description-container .description-image {
@@ -204,31 +203,20 @@ img {
     height: 100%;
     margin: 0;
     display: block;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     border-radius: 0;
-    transform: scale(1.18);
-    transform-origin: 50% 50%;
-    transition: transform 0.55s ease, object-position 0.55s ease;
+    transform: none;
+    transition: opacity 0.3s ease;
 }
 
-.description-container[data-part="case"] .description-image {
-    object-position: 48% 44%;
-    transform: scale(1.2);
-}
-
-.description-container[data-part="window"] .description-image {
-    object-position: 55% 47%;
-    transform: scale(1.75);
-}
-
-.description-container[data-part="handles"] .description-image {
-    object-position: 84% 53%;
-    transform: scale(1.68);
-}
-
+.description-container[data-part="case"] .description-image,
+.description-container[data-part="window"] .description-image,
+.description-container[data-part="handles"] .description-image,
 .description-container[data-part="seal"] .description-image {
-    object-position: 50% 50%;
-    transform: scale(1.08);
+    object-fit: contain;
+    object-position: center;
+    transform: none;
 }
 
 .description-info {
@@ -238,22 +226,21 @@ img {
     flex-direction: column;
     justify-content: center;
     padding: 30px;
-    border-left: 4px solid #d0555a;
-    background: #fff;
+    border-left: 4px solid #1A59C7;
     border-radius: 18px;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 28px rgba(40, 40, 40, 0.08);
 }
 
 .description-kicker {
     margin-bottom: 10px;
-    color: #d0555a;
+    color: #1A59C7;
     font-weight: 700;
 }
 
 .description-info h2 {
     margin-bottom: 14px;
     font-size: 2rem;
-    color: #111;
+    color: #ffffff;
 }
 
 .description-info p {
@@ -267,7 +254,7 @@ img {
 
 .feature-section {
     padding: 80px 10%;
-    background: #fafafa;
+    background: #000000;
 }
 
 .feature-row {
@@ -311,13 +298,13 @@ img {
 .feature-text h2 {
     font-size: 2.3rem;
     margin-bottom: 20px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .feature-text p {
     font-size: 1.15rem;
     line-height: 1.8;
-    color: #444;
+    color: #ffffff;
 }
 
 .accessories h2 {
@@ -382,7 +369,7 @@ img {
 
 .material-section {
     padding: 80px 10%;
-    background: #fafafa;
+    background: #000000;
 }
 
 .material-section h2 {
@@ -398,7 +385,7 @@ img {
     display: flex;
     align-items: center;
     gap: 20px;
-    background: #fff;
+    background: #202020;
     padding: 18px;
     border-radius: 16px;
     box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
@@ -420,7 +407,7 @@ img {
 
 .recipes {
     padding: 10%;
-    background: #fff;
+    background: #000000;
 }
 
 .recipes h2 {
@@ -440,12 +427,12 @@ img {
 }
 
 .recipe-slider::-webkit-scrollbar-thumb {
-    background: #ff5e5e;
+    background: #1A59C7;
     border-radius: 10px;
 }
 
 .recipe-card {
-    background: #f8f8f8;
+    background: #242424;
     overflow: hidden;
     flex-shrink: 0;
     width: min(600px, 82vw);
@@ -485,7 +472,7 @@ img {
 
 button{
     font-size: 1em;
-    background:#1c47d5;
+    background:hsl(23,100%,56%);
     color: rgb(255, 255, 255);
     padding: 16px 16px;
     font-weight: bold;
@@ -516,7 +503,7 @@ button:active {
 
 .leiste{
     display: flex;
-    background-color: #d0555a;
+    background-color: #1A59C7;
     color: white;
     justify-content: center;
     align-items: center;
@@ -645,8 +632,8 @@ footer {
     height: 44px;
     border: 0;
     border-radius: 999px;
-    background: rgba(255, 255, 255, 0.92);
-    color: #111;
+    background: rgba(0, 0, 0, 0.92);
+    color: #f1f1f1;
     font-size: 28px;
     line-height: 1;
     cursor: pointer;
@@ -667,7 +654,7 @@ footer {
         flex-direction: column;
         gap: 0;
         padding: 8px 0 12px;
-        background: #d0555a;
+        background: #1A59C7;
     }
 
     .navbar.menu-open .nav-links {

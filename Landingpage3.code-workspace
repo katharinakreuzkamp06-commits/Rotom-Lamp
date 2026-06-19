@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"name": "Landingpage",
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501
+	}
+}
